@@ -1,0 +1,31 @@
+{
+  "name": "台灣賞花地圖",
+  "short_name": "賞花地圖",
+  "description": "3D 台灣賞花地圖：拖曳日期看一年四季的花在哪裡開，33 個賞花地點、25 種花的實景照片圖鑑與賞花須知。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf0dc",
+  "theme_color": "#c8102e",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

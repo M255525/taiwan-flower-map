@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台灣賞花地圖・操作手冊</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ink:#2b1d18;--ink2:#5b4a40;--paper:#fffaf0;--bg:#fbf0dc;--line:#ecd9bd;--hong:#c8102e}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;--ink:#f6ebe0;--ink2:#dccbbd;--paper:#2a1d1b;--bg:#1d1412;--line:#553b35}}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#f6ebe0;--ink2:#dccbbd;--paper:#2a1d1b;--bg:#1d1412;--line:#553b35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC',sans-serif;line-height:1.8}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1,h2{font-family:'Noto Serif TC','Noto Sans TC',serif;font-weight:900}
+h1{font-size:30px;margin:0 0 4px;color:var(--hong)}
+h2{font-size:21px;margin:28px 0 8px;border-left:6px solid var(--hong);padding-left:10px}
+section{background:var(--paper);border:1.5px solid var(--line);border-radius:16px;padding:6px 18px 14px;margin-top:14px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+td,th{border-bottom:1px solid var(--line);padding:6px 4px;text-align:left;vertical-align:top}
+.k{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;border:1px solid rgba(0,0,0,.2)}
+a{color:#1f6f9a;word-break:break-all}
+p,li{color:var(--ink2)}
+</style>
+</head>
+<body>
+<main>
+<h1>台灣賞花地圖・操作手冊</h1>
+<p><a href="index.html">← 回到 3D 賞花地圖</a></p>
+
+<section>
+<h2>這是什麼</h2>
+<p>一張 3D 台灣賞花地圖：拖曳一整年的日期，看各地什麼時候有什麼花。冬天是梅花、山櫻花與休耕田的油菜花、波斯菊；春天有吉野櫻、杜鵑、木棉、黃花風鈴木，四五月是油桐花「五月雪」與藍花楹；夏天換荷花、阿勃勒、鳳凰木與繡球花；夏末秋初是金針花山，秋天有台灣欒樹、芒花與杭菊。地圖上標了 {{NS}} 個賞花地點，每處有一個程式自繪的地標（廟、涼亭、三合院、阿里山小火車、紅磚斷橋、菸樓、燈塔…）和依花的型態長出的花樹、灌叢、花田、荷池或芒草，盛開到尾聲時花瓣會依花色飄落；另有 {{NV}} 種花的實景照片圖鑑與賞花須知。</p>
+</section>
+
+<section>
+<h2>基本操作</h2>
+<ol>
+<li><b>選日期</b>：拖曳下方的日期軸（1/1～12/31），或點上面的長條直接跳到那一旬。長條高度＝那一旬「有花可看」（初開、盛開或尾聲）的地點數，顏色代表季節（藍＝冬、粉＝春、綠＝夏、橘＝秋）。按 ▶ 自動播放一整年；「今天」跳回今天。鍵盤 ← → 一次一天，加 Shift 一次十天。</li>
+<li><b>看地圖</b>：陸地會在正在開花的地點周圍染上那種花的顏色，越接近盛開越濃；拉近一點看，地面會印出一朵朵「花布」小碎花。地點標籤前的小圓點是目前最值得看的那種花的顏色（不是花季時改用花況顏色）。</li>
+<li><b>賞花地點</b>：右側（手機在下方，按「展開清單」）依目前日期分成「現在有花／兩週內開花／其他季節」，卡片顯示目前最值得看的花與倒數。上方「當季的花」可以直接點開圖鑑。點卡片或地圖上的地點會飛過去，看到一年花曆（色條＝花期，紅色短線＝最盛）、介紹、「📌 這裡要注意」與這裡的每一種花；「最盛」按鈕會把日期移到那種花最好看的時候。</li>
+<li><b>花卉圖鑑</b>：上方切到「📖 花卉圖鑑」，依目前花況排序。點花卉卡片打開實景照片、認識它、由來、為什麼值得看、各地花曆、哪裡看得到（附目前花況）與容易混淆的花，可列印。</li>
+<li><b>⚙ 常用設定</b>（收合式）：開啟時的日期、開啟時的清單、地點標籤、動畫與落花、自動播放速度、介面配色；底部「關於本工具」集中操作手冊、使用警語、創作者資訊、加入主畫面與訪客數。</li>
+</ol>
+</section>
+
+<section>
+<h2>花況五個階段</h2>
+<table>
+<tr><th>階段</th><th>意思</th></tr>
+{{STAGES}}
+</table>
+<p>每種花在每個地點都記錄「開始、最盛、結束」三個日期（可以跨年，例如梅花 12 月中到 1 月底）。最盛日之前的前段是「初開」，最盛日前後是「盛開」，最後一段是「尾聲」，開始前兩週內是「快開了」。</p>
+</section>
+
+<section>
+<h2>收錄內容</h2>
+<p><b>{{NS}} 個賞花地點</b>：</p>
+<ul><li>{{SPOTS}}</li></ul>
+<p><b>{{NV}} 種花</b>：{{NAMES}}。每個地點列出的是當地具代表性的花季，並非完整清單。</p>
+</section>
+
+<section>
+<h2>賞花須知（重點）</h2>
+<ul>
+<li>很多花海是農民的田：休耕花海、金針花田、蓮田、杭菊田只走開放的田埂或步道，不踩田、不摘花。</li>
+<li>不折枝、不搖樹，不攀爬古蹟與斷橋；落在步道上的花留給下一個人看。</li>
+<li>上高山賞花要注意天氣與高山症，山路花季假日常有交通管制。</li>
+<li>花多的地方蜜蜂也多；在行道樹下拍照留意車流；空拍機要先確認許可。</li>
+</ul>
+<p>完整內容與「賞花小辭典」請按地圖上的「🌼 賞花須知」。</p>
+</section>
+
+<section>
+<h2>注意事項</h2>
+<ul>
+<li>各地花期是依公開花季資訊與常見花況整理的一般性參考，不是當年的開花預報；每年可能提早或延後一兩週，花季活動也可能因天候停辦或延期。門票、預約、接駁與交通管制請以當地官方公告為準。</li>
+<li>海岸線、山的高度與地點位置都經過簡化與誇大，距離很近的地點會分開排列，不可用於導航或登山。</li>
+<li>本工具為個人製作的教學工具，與各地方政府、農場、園區及花季主辦單位無關。</li>
+<li>3D 地圖需要網路下載繪圖元件，實景照片需要網路連到 Wikimedia；照片無法載入時改以花朵示意圖表示。你看的日期、地點與常用設定只記在這台裝置的瀏覽器，不會上傳。</li>
+<li>本工具的文字說明、介面與 3D 模型僅供教學、課程及個人使用，禁止未經授權公開發布、販售或商業化使用。</li>
+</ul>
+</section>
+
+<section id="sources">
+<h2>資料來源</h2>
+<ul>
+<li>花期：各地方政府、國家風景區管理處、森林遊樂區與農場公開的花季資訊與新聞報導，經人工整理為一般性參考（2026-11 整理）。例如：東北角暨宜蘭海岸國家風景區管理處「<a href="https://events.necoast-nsa.gov.tw/flower26/" target="_blank" rel="noopener">2026 草嶺古道芒花季</a>」公告。</li>
+<li>台灣與離島輪廓、山脈地形：沿用作者「台灣賞鳥地圖」的手描簡化圖，山高有誇大。</li>
+<li>地點與花卉的文字說明皆為自行撰寫。</li>
+</ul>
+</section>
+
+<section id="photos">
+<h2>照片來源與授權</h2>
+<p>花卉圖鑑的實景照片全部取自 <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>，只採用 CC0、公有領域、CC BY 或 CC BY-SA 等允許再利用的授權，並依授權條款標示作者、授權與來源；照片未經修改（僅由 Wikimedia 縮圖服務縮小尺寸）。照片版權屬原作者，若要轉載請依各照片的授權條款標示。照片為物種示意，拍攝地點不一定在台灣或地圖上的地點。</p>
+<div class="tw"><table>
+<tr><th>花卉</th><th>作者</th><th>授權</th><th>來源檔案</th></tr>
+{{ROWS}}
+</table></div>
+</section>
+
+<section id="creator">
+<h2>創作者</h2>
+<div class="mk-creator">
+<style>.mk-creator{line-height:1.75}.mk-creator h3{margin:14px 0 6px;font-size:1.05em}.mk-creator table{width:100%;border-collapse:collapse;font-size:.95em}.mk-creator td,.mk-creator th{text-align:left;padding:5px 6px;border-bottom:1px solid rgba(128,128,128,.3);vertical-align:top}.mk-creator th{white-space:nowrap}.mk-creator ul{margin:4px 0;padding-left:1.4em}.mk-creator .mk-tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}.mk-creator .mk-tags span{border:1px solid rgba(128,128,128,.45);border-radius:999px;padding:1px 10px;font-size:.9em}</style>
+<p><b>Mark Tsai（蔡豐全）</b>為深耕創業輔導與數位轉型領域的顧問與講師，長期擔任勞動力發展署創業顧問與多項政府計畫的顧問、業師與評審委員，協助中小企業導入數據分析與 AI 工具、申請政府補助計畫，並具備跨境電商實務與講師培訓的豐富經驗。本工具是其推廣 AI 工具運用於教學與課程情境的作品之一。</p>
+<p>聯絡信箱：<a href="mailto:tsaimark@gmail.com">tsaimark@gmail.com</a></p>
+<h3>專長</h3>
+<div class="mk-tags"><span>銷售數據分析</span><span>AI 工具運用</span><span>政府補助計畫申請</span><span>創業</span><span>跨境電商</span></div>
+<h3>證照</h3>
+<table>
+<thead><tr><th>年度</th><th>證照</th></tr></thead>
+<tbody>
+<tr><td>2013</td><td>青創總會 創業輔導顧問師班</td></tr>
+<tr><td>2014</td><td>青創總會 網路行銷講師培訓班</td></tr>
+<tr><td>2016</td><td>阿里巴巴 P4P 認證講師</td></tr>
+<tr><td>2017</td><td>iCap 訓練規劃與評量職能基準課程</td></tr>
+<tr><td>2023</td><td>iCap 職能導向課程申請認證實作班</td></tr>
+<tr><td>2025</td><td>iPAS AI 應用規劃師－初級</td></tr>
+<tr><td>2025</td><td>新北市社會局 社區數位陪伴員</td></tr>
+</tbody>
+</table>
+<h3>經歷</h3>
+<ul>
+<li>勞動力發展署桃竹苗分署 創業顧問（2017－迄今）</li>
+<li>勞動力發展署（北北基）小型企業人力提升計畫 顧問（2019－迄今）</li>
+<li>勞動力發展署（桃竹苗）小型企業人力提升計畫 顧問（2019－迄今）</li>
+<li>農業部農業科技司「科技農企業雙軸轉型躍升發展」科技計畫 業師（2025－2026）</li>
+<li>勞動力發展署 企業人力資源提升計畫 審查委員（2024）</li>
+<li>勞動力發展署 職前訓練評鑑計畫 委員（2022）</li>
+<li>勞動部桃竹苗分署 桃竹苗區域運籌人力資源整合服務計畫 顧問（2022－2023）</li>
+<li>經濟部中小企業處 SBIR 海選專案 評審委員（2019－2024）</li>
+<li>勞動力發展署 數位學習課程清單審查會議 審查委員（2024－2025）</li>
+<li>輔仁大學創新跨領域學院 課務委員（2024－2025）</li>
+<li>台北市進出口商業同業公會 跨境電商生態村 顧問</li>
+<li>台灣網商協會 顧問</li>
+<li>中華職能開發策進會 顧問（2018－2020）</li>
+<li>新北市汽車美容人員職業工會 顧問（2023－迄今）</li>
+<li>中華網路行銷講師協會 顧問（2022－迄今）</li>
+<li>新北市社企電商基地 輔導顧問（2018－2020）</li>
+<li>阿里巴巴國際站平台 認證講師（2016）</li>
+<li>巨匠電腦 跨境電子商務班 講師（2016－2017）</li>
+</ul>
+</div>
+</section>
+</main>
+</body>
+</html>
