@@ -18,7 +18,7 @@
 ## 配套
 - ✅ 跑馬燈（必備）、manual（資料來源、照片授權表、完整創作者）、使用警語（底部＋首訪自動跳，`taiwanFlowerSeenWarning`）、⚙常用設定收合式（`taiwanFlowerSettings`；展開狀態 `taiwanFlowerSetOpen`）、偏好 `taiwanFlowerPrefs`、PWA（改 js 記得 `service-worker.js` 的 `CACHE_NAME` +1；`icons/` 用 PIL 畫花布牡丹）、訪客計數器 `page_id=m255525.taiwanflowermap`、RWD（375px 無橫向捲動）。
 - ❌ 序號授權（不需要）
-- GitHub Pages：`master` 分支＋`.github/workflows/deploy-pages.yml`，網址 https://m255525.github.io/taiwan-flower-map/ 。已放進創業島「歡樂遊樂園」。
+- GitHub Pages：`master` 分支＋`.github/workflows/deploy-pages.yml`，網址 https://m255525.github.io/taiwan-flower-map/ （**2026-11-12 已上線**；repo 由使用者自己 `gh repo create`，Pages 由 Claude 用 `gh api` 開啟後重跑 workflow）。已放進創業島「歡樂遊樂園」。
 
 ## Port／測試
 - port **8869**（`.claude/launch.json` 的 `taiwan-flower-map`）。
